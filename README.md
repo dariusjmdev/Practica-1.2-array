@@ -2,9 +2,7 @@
 
 Práctica 2 · Arrays · Desarrollo Web en Entorno Cliente · 2º DAW · IES Juan García Valdemora
 
-**Alumno/a:** _escribe aquí tu nombre_
-**Página publicada (GitHub Pages):** _pega aquí la URL_
-**Repositorio:** _pega aquí la URL del repositorio_
+**Alumno/a:** Darius Joanito Marinescu
 
 ## Descripción
 
