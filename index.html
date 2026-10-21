@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de notas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Registro de notas</h1>
+
+    <!-- Selectores de filtro y orden -->
+    <div class="controles">
+      <label for="filtro">Mostrar</label>
+      <select id="filtro">
+        <option value="todos">Todos</option>
+        <option value="aprobados">Aprobados</option>
+        <option value="suspensos">Suspensos</option>
+      </select>
+
+      <label for="orden">Ordenar por</label>
+      <select id="orden">
+        <option value="nombre">Nombre</option>
+        <option value="nota-desc">Nota más alta primero</option>
+        <option value="nota-asc">Nota más baja primero</option>
+      </select>
+    </div>
+
+    <!-- Tabla: el cuerpo lo dibuja pintarTabla() en app.js -->
+    <table>
+      <thead>
+        <tr><th>Nombre</th><th>Nota</th><th>Borrar</th></tr>
+      </thead>
+      <tbody id="cuerpo"></tbody>
+    </table>
+
+    <!-- Resumen de la clase (lo rellena app.js) -->
+    <p id="resumen"></p>
+
+    <!-- Formulario para añadir alumnos -->
+    <form id="formulario">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre">
+
+      <label for="nota">Nota</label>
+      <input type="text" id="nota">
+
+      <button type="submit">Añadir</button>
+    </form>
+
+    <!-- Mensajes de error del formulario (en lugar de alert) -->
+    <p id="mensaje"></p>
+  </main>
+
+  <!-- notas.js va primero porque app.js usa sus funciones -->
+  <script src="notas.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
